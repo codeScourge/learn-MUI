@@ -24,7 +24,7 @@ export const MuiCheckbox = () => {
         <FormControl>
             <FormGroup>
                 {possibleSkills.map(possibleSkill =>
-                    <FormControlLabel label={possibleSkill} key={possibleSkill} control={<Checkbox value={skills.includes(possibleSkill)} onChange={handleSkill} />} />
+                    <FormControlLabel label={possibleSkill} key={possibleSkill} control={<Checkbox checked={skills.includes(possibleSkill)} value={possibleSkill} onChange={handleSkill} />} />
                 )}
             </FormGroup>
         </FormControl>
